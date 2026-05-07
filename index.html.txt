@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Railway Deploy App</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#4f46e5,#9333ea);
+      color:white;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.1);
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+      backdrop-filter:blur(10px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      width:350px;
+    }
+
+    h1{
+      margin-bottom:15px;
+      font-size:32px;
+    }
+
+    p{
+      margin-bottom:20px;
+      font-size:18px;
+    }
+
+    button{
+      padding:12px 25px;
+      border:none;
+      border-radius:10px;
+      background:white;
+      color:#4f46e5;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      transform:scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Railway Deploy</h1>
+    <p>Your HTML project is running successfully 🚀</p>
+
+    <button onclick="showMessage()">
+      Click Me
+    </button>
+  </div>
+
+  <script>
+    function showMessage(){
+      alert("Hello from Railway Deployment!");
+    }
+  </script>
+
+</body>
+</html>
